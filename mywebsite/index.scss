@@ -1,0 +1,78 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    height: 100vh ;
+    background-color: chocolate;
+    display: grid;
+    grid-template-areas: 
+    "side header header"
+    "side pedrick3 pedrick3"
+    "side pedrick4 pedrick4";
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+
+    .pedrick1{
+        grid-area: side;
+        background-color:blue;
+    }
+    .pedrick2{
+        grid-area: header;
+        background-color: red;
+    }
+    .pedrick3{
+        grid-area: pedrick3;
+        background-color: green;
+    }
+    .pedrick4{
+        grid-area: pedrick4;
+        background-color: black;
+    }
+}
+
+.gallery{
+    background-color: antiquewhite;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+   margin: 30px 10px 10px 10px;
+
+
+    .picture{
+        border-radius: 10px;
+    }
+    .picture:nth-child(1){
+        background-color: red;
+    }
+    .picture:nth-child(2){
+        background-color: indigo;
+    }
+    .picture:nth-child(3){
+        background-color: darkgoldenrod;
+    }
+    .picture:nth-child(4){
+        background-color: skyblue;
+    }
+    .picture:nth-child(5){
+        background-color: green;
+    }
+    .picture:nth-child(6){
+        background-color: blue;
+    }
+    .picture:nth-child(7){
+        background-color: red;
+    }
+    .picture:nth-child(8){
+        background-color:darkcyan;
+    }
+    .picture:nth-child(9){
+        background-color:brown;
+    }
+    .picture:nth-child(10){
+        background-color:orangered;
+    }
+}
